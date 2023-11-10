@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/tex_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/boton"
+        android:padding="20sp"
+        android:text="TECNO-APP"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/boton"
+        android:padding="20sp"
+        android:text="TODOS A LA U"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/texform"
+            android:textSize="28sp"
+            android:textColor="#003CEF"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Formulario" />
+
+        <EditText
+            android:id="@+id/nom"
+            style="@style/editext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nonmbre"  />
+
+        <EditText
+            android:id="@+id/dir"
+            style="@style/editext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Direccion" />
+
+        <EditText
+            android:id="@+id/Phone"
+            style="@style/editext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Telefono"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/Email"
+            style="@style/editext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/Bt1"
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:text="Casa" />
+
+            <RadioButton
+                android:id="@+id/Bt2"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:text="Apartamento" />
+
+            <RadioButton
+                android:id="@+id/Bt3"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:text="Granja" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check1"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Panel" />
+
+            <CheckBox
+                android:id="@+id/check2"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Generador" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/check3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Otros" />
+
+        <Button
+            android:id="@+id/BtEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/boton"
+            android:text="Evniar"
+            android:textSize="30sp"
+            app:cornerRadius="10sp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
