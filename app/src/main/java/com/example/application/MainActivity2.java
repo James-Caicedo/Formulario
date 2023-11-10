@@ -51,6 +51,28 @@ public class MainActivity2 extends AppCompatActivity {
                 //Vamos a mostrarlo
                 Toast.makeText(getApplicationContext(),msj,Toast.LENGTH_SHORT).show();
 
+                //Vamos a crear las condiciones para que me muestre de acuerdo al RadioButton
+                if (rb1.isChecked()) {
+                    Toast.makeText(getApplicationContext(),"Usted vive en una casa",Toast.LENGTH_SHORT).show();
+                }
+                if (rb2.isChecked()) {
+                    Toast.makeText(getApplicationContext(),"Usted vive en un apartamento",Toast.LENGTH_SHORT).show();
+                }
+                if (rb3.isChecked()) {
+                    Toast.makeText(getApplicationContext(),"Usted vive en zona rural",Toast.LENGTH_SHORT).show();
+                }
+
+                //----------------------------------------------------------------------------//
+                //Vamos a crear las condiciones para que me muestre de acuerdo al CheckBox
+                if (cb1.isChecked()) {
+                    Toast.makeText(getApplicationContext(),"Paneles Solares",Toast.LENGTH_SHORT).show();
+                }
+                if (cb2.isChecked()) {
+                    Toast.makeText(getApplicationContext(),"Aerogeneradores",Toast.LENGTH_SHORT).show();
+                }
+                if (cb3.isChecked()) {
+                    Toast.makeText(getApplicationContext(),"Otros",Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

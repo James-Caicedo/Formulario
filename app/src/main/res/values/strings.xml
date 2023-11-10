@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Application</string>
+    <string name="tecno_app">TECNO-APP</string>
+    <string name="todos_a_la_u">TODOS A LA U</string>
+    <string name="formulario">Formulario</string>
+    <string name="casa">Casa</string>
+    <string name="apartamento">Apartamento</string>
+    <string name="granja">Granja</string>
+    <string name="panel">Panel</string>
+    <string name="generador">Generador</string>
+    <string name="otros">Otros</string>
+    <string name="enviar">Enviar</string>
+    <string name="nombre">Nombre</string>
+    <string name="direccion">Direccion</string>
+    <string name="telefono">Telefono</string>
+    <string name="email">Email</string>
 </resources>
